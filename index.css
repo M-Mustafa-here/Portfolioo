@@ -1,0 +1,210 @@
+.body {
+    background-color: black;
+}
+
+.navbar {}
+
+.logo {
+    padding-top: 40px;
+
+    margin-left: 7%;
+    color: rgba(230, 178, 67, 0.959);
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+
+
+
+}
+
+.MDS {
+    font-size: 100px;
+    
+    background: -webkit-linear-gradient(#eee, #5d5c68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.mds{
+    background: -webkit-linear-gradient(#e3e3e4, #dad9e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", serif;
+    margin-left: -3%;
+}
+
+.logo h1 {
+    top: 40px;
+    margin-left: 4%;
+
+}
+
+.links {
+    color: rgb(255, 254, 253);
+    font-size: 30px;
+    font-weight: 700;
+  
+    font-family:   "Poppins", serif;;
+   
+    font-style: normal;
+   
+   
+   
+
+
+
+
+}
+
+.links a:hover {
+    /* color: rgb(51, 54, 228); */
+    background: -webkit-linear-gradient(#2a44d6, #230ee4);
+   transition-behavior: smooth;
+   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.links a::before{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: 2s;
+
+}
+.links a:hover::before{
+    width: 100%;
+    
+    background: rgb(5, 48, 243);;
+}
+
+a {
+
+    position: relative;
+    top: 60px;
+    
+
+}
+
+
+.button {
+
+
+    top: 85px;
+    padding: 20px 80px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+   
+    
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px;
+        padding-inline: 30px;
+      
+      
+    
+
+
+}
+
+.button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.button::before {
+    content: "";
+    background: linear-gradient(45deg,
+            red, goldenrod, yellow, lightgreen, rgb(22, 196, 202), blue, pink, rgb(206, 35, 35));
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+
+    animation: glowing 20s linear;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+
+}
+
+@keyframes glowing{
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button:hover::before {
+    opacity: 1;
+
+}
+
+.button:active:after {
+    background: transparent;
+}
+
+.button:active {
+    color: #000;
+    font-weight: bold;
+}
+.parent{
+    height: 590px;
+    
+}
+.Name{
+    font-family: "Poppins", serif;
+  
+  font-weight: 400;
+  font-style: normal;
+  font-size: 200px;
+  color: white;
+  margin-left: 5%;
+  margin-top: 300px;
+  background: -webkit-linear-gradient(#eee, #1d0ac5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Parent{
+  height: 500px;
+  
+ 
+  
+}
+
+
+.bio{
+
+   height: 400px;
+   color: white;
+}
+.skill{
+    height: 400px;
+    color: white;
+}

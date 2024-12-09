@@ -11,23 +11,28 @@
     background-image: url(images/bg.jpg);
     background-repeat: no-repeat;
     width: 100%;
-   
+    z-index: +1;
+  
     
 }
 .box1{
     height: 200px;
+   
     
+   
+  
 }
 
 
 .cc h1 {
-    background: -webkit-linear-gradient(#e3e3e4, #050405);
+    background: -webkit-linear-gradient(#e3e3e4, #c7a305);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 1%;
-    font-family: "Protest Revolution", sans-serif;
-    font-size: 60px;
-
+    margin-left: -5%;
+        font-family: "Protest Revolution", sans-serif;
+    
+   position: static;
 
 }
 
@@ -36,13 +41,13 @@
 .links {
     color: rgb(255, 254, 253);
     font-size: 20px;
-    
+
     top: 1%;
     font-weight: 700;
-    position: relative;
+    
     font-family: "Poppins", serif;
     ;
-
+ 
     font-style: normal;
 
 
@@ -53,6 +58,8 @@
 
 
 }
+
+
 
 
 .links a:hover {
@@ -79,7 +86,7 @@
 .links a:hover::before {
     width: 100%;
 
-    background: rgb(238, 238, 240);
+    background: rgb(205, 6, 255);
     ;
 }
 
@@ -100,7 +107,7 @@ a {
     border: none;
     outline: none;
     margin-left: -70%;
-   
+   color: rgb(233, 232, 222);
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -131,7 +138,7 @@ a {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* background-color: #201f1f; */
+    background-color: #201f1f;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -151,7 +158,7 @@ a {
     filter: blur(8px);
 
     animation: glowing 20s linear;
-    transition: opacity .3s ease-in-out;
+    transition: opacity .10s ease-in-out;
     border-radius: 10px;
     opacity: 1;
 
@@ -181,7 +188,7 @@ a {
 }
 
 .button:active {
-    color: #0b0b0b;
+    color: #dedada;
     font-weight: bold;
 }
 
@@ -276,13 +283,13 @@ border: 1px solid rgba(43, 30, 30, 0.842);
 }
 
 .parent{
-    height: 900px;
+    height: 11 00px;
     
     
 
 }
 .skills{
-   margin-left: 10%;
+   margin-left: 15%;
 }
 .skillcard{
     height: 250px;
@@ -296,8 +303,8 @@ border: 1px solid rgba(43, 30, 30, 0.842);
     align-items: center;
     box-sizing: border-box;
     text-align: justify;
-    -webkit-border-after: rgb(238, 17, 246)  solid 3px;
-    background: -webkit-linear-gradient(rgb(79, 80, 80),rgb(16, 13, 16));
+    -webkit-border-after: rgb(219, 17, 246)  solid 4px;
+    background: -webkit-linear-gradient(rgb(61, 61, 61),rgb(2, 2, 2));
 }
 
 
@@ -315,11 +322,11 @@ border: 1px solid rgba(43, 30, 30, 0.842);
     margin-top: 250px;
    font-size: 15px;
     background-color: rgb(44, 44, 44);
-    height: 200px;
-   background: -webkit-linear-gradient(rgb(79, 80, 80),rgb(16, 13, 16));
+    height: 250px;
+    background: -webkit-linear-gradient(rgb(61, 61, 61),rgb(2, 2, 2));
    
     color: white;
-    -webkit-border-after: rgb(238, 17, 246)  solid 3px;
+    -webkit-border-after: rgb(219, 17, 246)  solid 4px;
     border-radius: 30px;
    box-sizing: border-box;
    text-align: justify;
@@ -336,15 +343,15 @@ border: 1px solid rgba(43, 30, 30, 0.842);
     margin-top: 250px;
     font-size: 15px;
      background-color: rgb(44, 44, 44);
-     height: 200px;
+     height: 250px;
      color: white;
-     -webkit-border-after: rgb(238, 17, 246)  solid 3px;
+     -webkit-border-after: rgb(219, 17, 246)  solid 4px;
      border-radius: 30px;
     box-sizing: border-box;
     text-align: justify;
      display: flex;
      align-items: center;
-     background: -webkit-linear-gradient(rgb(79, 80, 80),rgb(16, 13, 16));
+     background: -webkit-linear-gradient(rgb(61, 61, 61),rgb(2, 2, 2));
 }
 .fa-solid{
     font-size: 25px;
@@ -352,6 +359,94 @@ border: 1px solid rgba(43, 30, 30, 0.842);
     
 }
 
+@keyframes appear {
+    from{
+        opacity: 0;
+       transform: translateX(+100px);
+       transition-timing-function: 4s;
 
-
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
     
+}
+.skillcard ,.skillcard2 ,.skillcard3{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.form{
+  border-radius: 30px;
+    
+    height: 700px;
+ background-image: url(images/blackmountains.jpg);
+    border: yellow;
+    color: whitesmoke;
+   
+   
+  
+   
+}
+.contact{
+    height: 100px;
+}
+.fa-circle{
+    color: white;
+}
+body{
+    scroll-behavior: smooth;
+}
+.ssec{
+    height: 600px;
+    margin-top: 90px;
+   
+}
+.ssec h1{
+    font-size: 45px;
+    background: -webkit-linear-gradient(#ffffff, #fffb00,rgb(200, 130, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ font-weight: 700;
+
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.css{
+    margin-left: 20px;
+}
+.js{
+    margin-left: 20px ;
+    
+}
+.seo{
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.formtxt{
+ color: whitesmoke;
+}
+.footer1{
+    height: 180px;
+    -webkit-border-before:rgb(255, 247, 247) 2px solid ;
+
+   
+}
+.form1{
+    /* From https://css.glass */
+background: rgba(35, 35, 34, 0.421);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+height: 600px;
+padding-inline: 20px;
+
+
+}
